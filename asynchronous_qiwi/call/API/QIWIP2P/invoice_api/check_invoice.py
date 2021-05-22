@@ -3,7 +3,7 @@ from .....connector.aiohttp_connector import Connector
 from .....data_types.connector.request_type import GET
 
 
-class CheckInvoiceAPI(Connector):
+class CheckInvoiceAPI():
 
     @classmethod
     async def check_invoice(cls, secret_key: str, bill_id: str) -> dict:
